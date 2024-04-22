@@ -24,9 +24,8 @@ def convert_currency(amount, from_currency, to_currency):
 
 if __name__ == "__main__":
     amount = float(input("Enter amount to convert: "))
-    from_currency = input("Enter the currency you have (3-letter \
-                          code, e.g., USD, EUR): ").upper()
-    to_currency = input("Enter the currency you want to convert to (3-letter code, e.g., USD, EUR): ").upper()
+    from_currency = input("Enter the currency you have (3-lettercode, e.g., USD, EUR, NGN, CAD, CHF, CNY, GBP, INR, AUD, AED): ").upper()
+    to_currency = input("Enter the currency you want to convert to (3-letter code, e.g., USD, EUR, NGN, CAD, CHF, CNY, GBP, INR, AUD, AED, CHF): ").upper()
     result = convert_currency(amount, from_currency, to_currency)
     if isinstance(result, float):
         print("{:.2f} {} is equal to {:.2f} {}".format(amount,
